@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUEST BOOK</title>
+</head>
+<body background="images/tokyyo.jpg"><!--untuk memanggil background--> 
+  <!--berfungsi untuk membuat label dan untuk input data yg di proses di php-->
+ 
+   <div class="container">		
+   <div align="center"><strong><font color="white" size="20" face="algerian">FORM PEMBAYARAN </font></strong></div>
+<form action="proses.php" method="post" enctype="multipart/form-data">
+<fieldset>
+  <div class="form-group">
+    <pre><label for="nama" ><font color="white">Nama Pelanggan:</font></label></pre>
+    <input type="text" name="nama" class="form-control" id="nama">
+  </div>
+  <div class="form-group">
+    <pre><label for="alamat"><font color="white">Nama Barang :</font></label></pre>
+    <input type="text" name="nama_barang" class="form-control" id="alamat">
+  </div>
+  <div class="form-group">
+   <pre> <label for="alamat"><font color="white">Jumlah :</font></label></pre>
+    <input type="text" name="jumlah" class="form-control" id="alamat">
+  </div>
+  <div class="form-group">
+    <pre><label for="alamat"><font color="white">Harga Satuan :</font></label></pre>
+    <input type="text" name="harga" class="form-control" id="alamat">
+  </div>
+  <div class="form-group">
+    <pre><label for="alamat"><font color="white">Bukti Transaksi :</font></label></pre>
+    <input type="file" name="file">
+  </div>
+  <br>
+    <button onclick="myfunction()" type="submit" name="Submit" class="btn btn-primary" >Submit</button>
+    <button type="reset" name="Submit2" class="btn btn-danger">Reset</button>
+     </fieldset>
+</form>
+   </div>
+   <!--untuk membuat alert-->
+<script>
+
+function myFunction() {
+  alert('Data tersimpan');
+  document.location.href ="proses.php";
+}
+</script>
+</body>
+</html>

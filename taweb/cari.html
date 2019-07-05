@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyek Pemrograman Web</title>
+	<!-- untuk memanggil Style2 Css -->
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<!-- Style Javascript -->
+	<script language="javascript" src="js/javascript.js"></script>
+</head>
+<body>
+
+<div class="header"><!--untuk memanggil header dri file external css-->
+	<marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()" style="font-family: algerian; font-size:30px; color: white; width="100%"><br><br><b>TEKNIK INFORMATIKA UAD 2018</b><br><br></marquee><!--berfungsi untuk membuat tulisan "biografi bmth" berjalan dan juga bisa untuk mengatur warnanya-->
+
+</div>
+	<div class="menubar"><!--untuk memanggil menubar dari file external css-->
+		<ul>
+			<li><a href="index.html"><b>PROFIL</b></a></li>
+			<li><a href="materi.html"><b>HOME</a></b></li>
+			<li><a href="cari.html"><b>CARI</b></a></li><!--untuk membuat dan memanggil yprlink dri file external-->
+			<li><a href="buku.html"><b>DATA PEMESANAN</b></a></li>
+		</ul>
+</div>	
+<p id="demo"></p>
+<!--untuk menampilkan tanggal-->
+<script>
+var d = new Date("2015-03-25");
+document.getElementById("demo").innerHTML = d;
+</script>
+<div class="menu2"><!--untuk memanggil menu2 dari file external css-->
+	<br><br>
+	<h2><font color="black">HALAMAN PENCARI HORIZON SUPPLY</font></h2><!--untuk memberi tulisan dan warna-->
+	<hr width="90%">
+
+	<br>
+<!--form pencarian untuk menampilkan cari yg akan di satukan dengana java script-->
+	<form name="formcari" onSubmit="cari()">
+  	<input class="search" name="keyword" type="text" placeholder="Cari..." required>	
+  	<input class="button" type="submit" value="Cari">		
+	</form>
+	<br><br><br><br>
+
+
+	
+	
+</div>
+
+		<button onclick="konfirmasiDulu()">Keluarkan Confirm Box</button>
+		<p id="hasil"></p>
+		<!--JS untuk menampilkan onclick yg bertuliskan klik tombol-->
+		<script>
+			function konfirmasiDulu(){
+				var konfirmasi = confirm("Klik!");
+				var text = "";
+				
+				if(konfirmasi === true) {
+					text = "Kamu klik Tombol OK";
+				}else{
+					text = "Kamu klik Tombol Cancel";
+				}
+				
+				document.getElementById("hasil").innerHTML = text;
+			}
+		</script>
+
+<div class="footer"><!--untuk membuat footer dan memanggil nya dri file css yg bernama "style2"--> 
+	<br>
+	<br>
+		<font color="#6495ED"><b>&copy</b></font>&nbspRidhan Aufa Mahfud - Universitas Ahmad Dahlan - Yogyakarta - <font color="#6495ED"><b>2019</b></font><!--untuk menuliskan di footer-->
+</div>
+
+</body>
+</html>

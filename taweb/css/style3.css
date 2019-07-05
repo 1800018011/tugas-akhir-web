@@ -1,0 +1,86 @@
+.header{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size:100%;
+	background-position: center;
+	height: 180px;
+	width: 100%;
+	z-index:-1;
+}
+
+.menubar ul{
+	background-color: #F25E23;
+	width: 98.8%;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	position: absolute;
+	z-index:9999;
+	margin-top: -60px;
+}
+.menubar li{
+	float: left;
+}
+.menubar li a{
+	display: block;
+	text-align: center;
+	padding: 20px 15px;
+	text-decoration: none;
+	font-family: Sniglet;;
+	color: white;
+	
+}
+.menubar li a:hover{
+	background-color: #6495ED;
+}
+.menubar li a:visited{
+	color: white;
+	z-index:9999;
+}
+
+
+.menu2{
+	background-color: white;
+	opacity: 0.9;
+	width: 100%;
+	height: auto;
+	float: left;
+	
+}
+.menu2 h2{
+	margin-left: 65px;
+	font-family: algerian;
+}
+.menu2 p{
+	margin-left: 65px;
+	font-family: algerian;
+}
+.menu2 table{
+	margin-left: 65px;
+}
+.content{
+	background-color: white;
+	text-align: justify;
+	width: 90%;
+	margin-left: 65px;
+}
+
+
+
+.footer{
+	background-color: black;
+	opacity: 0.7;
+	width: 100%;
+	height: 70px;
+	bottom: 0px;
+	margin-bottom: 1px;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: -250px;
+	text-align: center;
+	margin-top: 500px;
+	color: white;
+	font-family: algerian;
+}
